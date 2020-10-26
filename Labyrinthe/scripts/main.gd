@@ -23,7 +23,8 @@ func _ready():
 	# Initialise les voisins
 	_set_voisins()
 	
-	# 
+	# Pause de 3 secondes pour afficher le labyrinthe initial
+	print("Départ du parcours dans 3 secondes")
 	yield(get_tree().create_timer(3.0), "timeout")
 	
 	# Parcours le labyrinthe en largeur jusqu'à temps que toutes les cases aient été visitées
